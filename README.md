@@ -1,4 +1,4 @@
-# At Coderの問題をC++解くためのDocker環境です。
+# At Coderの問題をC++で解くためのDocker環境です。
 
 ## 使い方
 - ```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp``` 
