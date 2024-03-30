@@ -1,0 +1,19 @@
+services:
+  cpp:
+    build:
+      context: .
+    environment:
+      FILE: ${FILE}
+    volumes:
+      - ./src/:/cpp/src/
+      - ./input/:/cpp/input/
+      - ./c++exec.sh:/cpp/c++exec.sh
+    entrypoint: ["/bin/bash", "-c", "./c++exec.sh"]
+
+    # デバッグするときはコンテナを起動したままにしておく
+    # dc exec cpp /bin/bash　でコンテナに入る
+    # 
+    # stdin_open: true
+    # tty: true
+   
+
