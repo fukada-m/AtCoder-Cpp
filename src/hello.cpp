@@ -1,13 +1,9 @@
-#include <iostream> // cin cout
-#include <set> // set
-#include <algorithm>
-#include <vector>
-#include <cstdlib>
-
+#include <bits/stdc++.h>
 using namespace std;
+
+
 
 int main()
 {
-   cout << "Hello, World!" << endl;
 
 }
