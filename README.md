@@ -2,7 +2,7 @@
 
 ## 使い方
 - ```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp``` 
-- `src/`配下に実行したい`.cpp`ファイルを配置する。
+- `src/`配下に実行したい`.cpp`ファイル(hello.cpp)を配置する。
 - 標準入力したい値を`input/input.txt`を作成して記載する
 - `docker compose up -d`でコンテナを立ち上げる
 - VsCodeのDevContainers拡張を使ってVsCodeにコンテナをアタッチする
