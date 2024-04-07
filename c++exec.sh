@@ -1,8 +1,9 @@
 #!/bin/bash
+file="hello"
 
-g++ "./src/${FILE}" -o "./src/a.out"
+g++ "./src/$file.cpp" -o "./src/a.out"
 
-echo $FILE "が実行された"
+echo $file.cpp "が実行された"
 echo "==============outputの内容==================="
 ./src/a.out
 echo ""

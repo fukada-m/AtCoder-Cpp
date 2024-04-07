@@ -2,8 +2,6 @@ services:
   cpp:
     build:
       context: .
-    environment:
-      FILE: ${FILE}
     volumes:
       - ./src/:/root/cpp/src/
       - ./input/:/root/cpp/input/

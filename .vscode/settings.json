@@ -1,3 +1,10 @@
 {
-    "cmake.sourceDirectory": "/root/.vscode-server/extensions/twxs.cmake-0.0.17/node_modules/peg-cmake/test"
+    "cmake.sourceDirectory": "/root/.vscode-server/extensions/twxs.cmake-0.0.17/node_modules/peg-cmake/test",
+    "files.associations": {
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
 }
