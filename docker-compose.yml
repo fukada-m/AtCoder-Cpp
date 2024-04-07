@@ -5,15 +5,11 @@ services:
     environment:
       FILE: ${FILE}
     volumes:
-      - ./src/:/cpp/src/
-      - ./input/:/cpp/input/
-      - ./c++exec.sh:/cpp/c++exec.sh
-    entrypoint: ["/bin/bash", "-c", "./c++exec.sh"]
-
-    # デバッグするときはコンテナを起動したままにしておく
-    # dc exec cpp /bin/bash　でコンテナに入る
-    # 
-    # stdin_open: true
-    # tty: true
+      - ./src/:/root/cpp/src/
+      - ./input/:/root/cpp/input/
+      - ./c++exec.sh:/root/cpp/c++exec.sh
+      - ./vscode/:/root/.vscode/
+    stdin_open: true
+    tty: true
    
 

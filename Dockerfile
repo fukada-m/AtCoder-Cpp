@@ -1,8 +1,9 @@
-FROM ubuntu:latest
+FROM gcc:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-WORKDIR /cpp/
+WORKDIR /root/cpp
 
 RUN apt-get update && apt-get install -y \
- build-essential cmake clang libssl-dev
+ gdb && \
+ alias cpp="./c++exec.sh"
