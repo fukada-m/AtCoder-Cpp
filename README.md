@@ -1,5 +1,5 @@
 # At Coderの問題をC++で解くためのDocker環境です。
-ver2.00はコンテナ環境でデバッグ実行できるようにしました。
+ver2.0.0はコンテナ環境でデバッグ実行できるようにしました。
 
 ## 使い方
 - ```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp``` 
