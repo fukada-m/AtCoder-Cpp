@@ -2,6 +2,9 @@
 using namespace std;
 #define rep(i, s, n) for (int i = (s); i < (int)(n); i++)
 
+// 問題のURL
+// https://atcoder.jp/contests/abc128/tasks/abc128_c
+
 int main(){
     ifstream inputFile("/root/cpp/input/input.txt");
     cin.rdbuf(inputFile.rdbuf());
