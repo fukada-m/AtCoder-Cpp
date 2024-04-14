@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "type": "cppdbg",
     "request": "launch",
-    "program": "${WorkspaceFolder}/src/a.out",
+    "program": "${WorkspaceFolder}/src/hello",
     "args": [],
     "stopAtEntry": false,
     "cwd": "${workspaceFolder}",
@@ -10,11 +10,14 @@
     "externalConsole": false,
     "MIMode": "gdb",
     "setupCommands": [
-        {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-        }
+      { "text": "-enable-pretty-printing",
+        "description": "Enable GDB pretty-printing",
+        "ignoreFailures": false
+      },
+      { "text": "source ~/.gdbinit",
+        "description": "Load .gdbinit",
+        "ignoreFailures": false
+      }
     ],
     "miDebuggerPath": "/usr/bin/gdb",
     "configurations": []
