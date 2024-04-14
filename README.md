@@ -11,11 +11,15 @@
 - 競技プログラミングサイトへのコード提出時は  ```ifstream inputFile("/root/cpp/input/input.txt");
   cin.rdbuf(inputFile.rdbuf());```の部分は削除してくだい
 
-## カスタ水
+## カスタム要素
 - 実行したいファイルを変更したいときは`c++exec.sh`の`$file`を編集する
 - デバッグ実行したいファイルを変更したいときは`launch.json`の`"program"`の値を変更する例：`program": "${WorkspaceFolder}/src/hello"`
+
+## リリースノート
 - ver1.0.0(Hello world)が "hello world"を出力するお試しようになってます。
 - ver2.0.0ではコンテナ環境でデバッグ実行できるようにしました。
+
+## Tips
 - コンパイラにはg++を使っています。なぜなら、`include`をひとまとめにした `<bits/stdc++.h>`を使いたいからです。
 
 [^1]: `hello.cpp`が実行できるようにセットアップしてあります。
