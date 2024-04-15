@@ -6,7 +6,7 @@ services:
       - ./src/:/root/cpp/src/
       - ./input/:/root/cpp/input/
       - ./c++exec.sh:/root/cpp/c++exec.sh
-      - ./sample.cpp:/root/cpp/sample.cpp
+      - ./sample.sh:/root/cpp/sample.sh
       - ./.vscode/:/root/.vscode/
     stdin_open: true
     tty: true
