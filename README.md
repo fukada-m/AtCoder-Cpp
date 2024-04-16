@@ -1,7 +1,8 @@
-# At Coderの問題をC++で解くためのDocker環境です。
+# At Coderの問題をC++で解くためのDocker環境です
 
 ## 使い方
-- リポジトリをクローンしてディレクトリに移動します```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp``` 
+- リポジトリをクローンしてディレクトリに移動します
+```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp```
 - `src/`配下に実行したい`.cpp`ファイル[^1]を配置する。
 - 標準入力したい値を`input/input.txt`を作成して記載する
 - `docker compose up -d`でコンテナを立ち上げる
