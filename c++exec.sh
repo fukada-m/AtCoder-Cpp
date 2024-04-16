@@ -10,5 +10,5 @@ echo ""
 
 echo "==============inputの内容===================="
 cat ./input/input.txt
-
+echo ""
 rm ./src/a.out
