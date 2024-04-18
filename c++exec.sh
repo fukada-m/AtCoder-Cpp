@@ -5,7 +5,7 @@ g++ "./src/$file.cpp" -o "./src/a.out"
 
 echo $file.cpp "が実行された"
 echo "==============outputの内容==================="
-time ./src/a.out
+./src/a.out
 echo ""
 
 echo "==============inputの内容===================="
