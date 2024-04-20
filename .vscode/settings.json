@@ -1,13 +1,14 @@
 {
-    "cmake.sourceDirectory": "/root/.vscode-server/extensions/twxs.cmake-0.0.17/node_modules/peg-cmake/test",
-    "files.associations": {
-        "iosfwd": "cpp",
-        "iostream": "cpp",
-        "deque": "cpp",
-        "string": "cpp",
-        "vector": "cpp"
-    },
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false
+  "cmake.sourceDirectory": "/root/.vscode-server/extensions/twxs.cmake-0.0.17/node_modules/peg-cmake/test",
+  "files.associations": {
+    "iosfwd": "cpp",
+    "iostream": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp",
+    "tuple": "cpp"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false
 }
