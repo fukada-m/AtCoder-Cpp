@@ -1,3 +1,5 @@
 src/*.out
 src/hello
+src/sample
 input/*.txt
+
