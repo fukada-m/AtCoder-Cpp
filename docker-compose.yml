@@ -1,5 +1,5 @@
 services:
-  cpp:
+  atcoder-cpp:
     build:
       context: .
       dockerfile: .docker/Dockerfile
