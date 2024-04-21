@@ -2,6 +2,7 @@ services:
   cpp:
     build:
       context: .
+      dockerfile: .docker/Dockerfile
     volumes:
       - ./src/:/root/cpp/src/
       - ./input/:/root/cpp/input/
