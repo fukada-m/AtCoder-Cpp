@@ -1,5 +1,5 @@
 services:
-  atcoder-cpp:
+  cpp:
     build:
       context: .
     volumes:
