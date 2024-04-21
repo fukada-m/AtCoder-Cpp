@@ -2,7 +2,6 @@
     "version": "0.2.0",
     "type": "cppdbg",
     "request": "launch",
-    // "program": "${WorkspaceFolder}/src/hello",
     "args": [],
     "stopAtEntry": false,
     "cwd": "${workspaceFolder}",
