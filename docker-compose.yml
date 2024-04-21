@@ -10,5 +10,3 @@ services:
       - ./.vscode/:/root/.vscode/
     stdin_open: true
     tty: true
-   
-

@@ -7,8 +7,8 @@ WORKDIR /root/cpp
 
 COPY .gdbinit /root/.gdbinit
 
-# # 起動シェルをshからbashに変更
-# SHELL ["/bin/bash", "-c"]
+# 起動シェルをshからbashに変更
+SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && apt-get install -y \
  gdb \
