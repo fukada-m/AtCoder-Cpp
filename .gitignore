@@ -1,5 +1,8 @@
-src/*/*/*/a.out
-src/hello
+src/*/*/a.out
+src/*/*/main
+src/*/*/test
+src/*/*/tests
+src/*/contest*
 src/sample
 input/*.txt
 .env
