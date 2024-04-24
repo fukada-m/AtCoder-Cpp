@@ -8,7 +8,6 @@ services:
     volumes:
       - ./src/:/root/cpp/src/
       - ./input/:/root/cpp/input/
-      - ./sample.sh:/root/cpp/sample.sh
       - ./sh-script/:/root/cpp/sh-script/
       - ./.vscode/:/root/.vscode/
       - ./templates/cpp/:/root/.config/atcoder-cli-nodejs/cpp
