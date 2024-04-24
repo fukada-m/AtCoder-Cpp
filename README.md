@@ -13,12 +13,20 @@
 6. AtCoder Cli にログインする
    - `acc login`
 7. 問題をダウンロードする
-   - ./sh-script/run_dl.sh
-8. テストする
-   - ./sh-script/run_test.sh
-9. 提出する
-
-- ./sh-script/run_submit.sh
+   - ./sh-script/run_dl.sh abc101
+8. デバッグ実行する
+   1. input.txt に入力値を記載する
+   2. VsCode のデバッグ実行を実行する
+9. テストする
+   1. main.cpp から以下の 2 行をコメントアウトする
+   - ifstream inputFile("/root/cpp/input/input.txt");
+   - cin.rdbuf(inputFile.rdbuf());
+   2. ./sh-script/run_test.sh abc101 a
+10. 提出する
+    1. mian.cpp から以下の 2 行をコメントアウトする
+    - ifstream inputFile("/root/cpp/input/input.txt");
+    - cin.rdbuf(inputFile.rdbuf());
+    2. ./sh-script/run_submit.sh abc101
 
 ## リリースノート
 
