@@ -6,6 +6,7 @@ ENV TZ=Asia/Tokyo
 WORKDIR /root/cpp
 
 COPY .gdbinit /root/.gdbinit
+COPY sh-script/init_config.sh /root/init_config.sh
 
 # 起動シェルをshからbashに変更
 SHELL ["/bin/bash", "-c"]
@@ -34,5 +35,7 @@ RUN apt-get update && apt-get install -y \
  RUN npm install -g atcoder-cli@2.2.0
  RUN pip install online-judge-tools==11.5.1
 
-RUN acc config default-task-choice all \
- && acc config default-template cpp
+ RUN chmod +x /root/init_config.sh
+
+ ENTRYPOINT [ "/root/init_config.sh" ]
+ CMD [ "bash" ]

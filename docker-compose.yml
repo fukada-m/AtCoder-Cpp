@@ -5,7 +5,7 @@ services:
     volumes:
       - ./src/:/root/cpp/src/
       - ./sample.sh:/root/cpp/sample.sh
-      - ./run_test.sh:/root/cpp/run_test.sh
+      - ./sh-script/:/root/cpp/sh-script/
       - ./.vscode/:/root/.vscode/
       - ./templates/cpp/:/root/.config/atcoder-cli-nodejs/cpp
     stdin_open: true
