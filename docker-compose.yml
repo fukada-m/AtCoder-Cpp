@@ -8,5 +8,6 @@ services:
       - ./c++exec.sh:/root/cpp/c++exec.sh
       - ./sample.sh:/root/cpp/sample.sh
       - ./.vscode/:/root/.vscode/
+      - ./templates/cpp/:/root/.config/atcoder-cli-nodejs/cpp
     stdin_open: true
     tty: true
