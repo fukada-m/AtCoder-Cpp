@@ -1,26 +1,45 @@
-# At Coderの問題をC++で解くためのDocker環境です
+# At Coder の問題を C++で解くための Docker 環境です
 
 ## 使い方
-- リポジトリをクローンしてディレクトリに移動します
-```git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp```
-- `src/`配下に実行したい`.cpp`ファイル[^1]を配置する。
-- 標準入力したい値を`input/input.txt`を作成して記載する
-- `docker compose up -d`でコンテナを立ち上げる
-- VsCodeのDevContainers拡張を使ってVsCodeにコンテナをアタッチする
-- `hello.cpp`開いてデバッグ実行する
-- `hello.cpp`をコンパイルして実行したい場合は`cd /root/cpp`して`./c++exec.sh`を実行する
-- 競技プログラミングサイトへのコード提出時は  ```ifstream inputFile("/root/cpp/input/input.txt");
-  cin.rdbuf(inputFile.rdbuf());```の部分は削除してくだい
 
-## カスタム要素
-- 実行したいファイルを変更したいときは`c++exec.sh`の`$file`を編集する
-- デバッグ実行したいファイルを変更したいときは`launch.json`の`"program"`の値を変更する例：`program": "${WorkspaceFolder}/src/hello"`
+1. リポジトリをクローンしてディレクトリに移動します
+   `git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp`
+2. OJ のログイン情報を記載した.env を作成する[^1]
+   1. cp `.env.example .env`
+   2. ユーザー名とパスワードを書き換える
+3. `docker compose up -d`でコンテナを立ち上げる
+4. VsCode の DevContainers 拡張を使って VsCode にコンテナをアタッチする
+5. `cd cpp`
+6. AtCoder Cli にログインする
+   - `acc login`
+7. 問題をダウンロードする
+   - ./sh-script/run_dl.sh abc101
+8. デバッグ実行する
+   1. input.txt に入力値を記載する
+   2. VsCode のデバッグ実行を実行する
+9. テストする
+   1. main.cpp から以下の 2 行をコメントアウトする
+   - ifstream inputFile("/root/cpp/input/input.txt");
+   - cin.rdbuf(inputFile.rdbuf());
+   2. ./sh-script/run_test.sh abc101 a
+10. 提出する
+    1. mian.cpp から以下の 2 行をコメントアウトする
+    - ifstream inputFile("/root/cpp/input/input.txt");
+    - cin.rdbuf(inputFile.rdbuf());
+    2. ./sh-script/run_submit.sh abc101
 
 ## リリースノート
+
 - ver1.0.0(Hello world)が "hello world"を出力するお試しようになってます。
-- ver2.0.0ではコンテナ環境でデバッグ実行できるようにしました。
+- ver2.0.0 ではコンテナ環境でデバッグ実行できるようにしました。
+- ver3.0.0 では`Atcoder cli`と `Online judgement tool`を導入しました。
 
 ## Tips
-- コンパイラにはg++を使っています。なぜなら、`include`をひとまとめにした `<bits/stdc++.h>`を使いたいからです。
 
-[^1]: `hello.cpp`が実行できるようにセットアップしてあります。
+- コンパイラには g++を使っています。理由は、`include`をひとまとめにした `<bits/stdc++.h>`を使いたいからです。
+
+## メンテナー
+
+X の ID：@patch88888
+
+[^1]: 事前に Atcoder(https://atcoder.jp/)に登録している必要があります。

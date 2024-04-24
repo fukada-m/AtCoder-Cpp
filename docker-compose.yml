@@ -2,13 +2,15 @@ services:
   cpp:
     build:
       context: .
+      args:
+        ATCODER_USER: ${ATCODER_USER}
+        ATCODER_PASS: ${ATCODER_PASS}
     volumes:
       - ./src/:/root/cpp/src/
       - ./input/:/root/cpp/input/
-      - ./c++exec.sh:/root/cpp/c++exec.sh
       - ./sample.sh:/root/cpp/sample.sh
+      - ./sh-script/:/root/cpp/sh-script/
       - ./.vscode/:/root/.vscode/
+      - ./templates/cpp/:/root/.config/atcoder-cli-nodejs/cpp
     stdin_open: true
     tty: true
-   
-
