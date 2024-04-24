@@ -4,9 +4,8 @@ services:
       context: .
     volumes:
       - ./src/:/root/cpp/src/
-      - ./input/:/root/cpp/input/
-      - ./c++exec.sh:/root/cpp/c++exec.sh
       - ./sample.sh:/root/cpp/sample.sh
+      - ./run_test.sh:/root/cpp/run_test.sh
       - ./.vscode/:/root/.vscode/
       - ./templates/cpp/:/root/.config/atcoder-cli-nodejs/cpp
     stdin_open: true
