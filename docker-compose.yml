@@ -2,6 +2,9 @@ services:
   cpp:
     build:
       context: .
+      args:
+        ATCODER_USER: ${ATCODER_USER}
+        ATCODER_PASS: ${ATCODER_PASS}
     volumes:
       - ./src/:/root/cpp/src/
       - ./sample.sh:/root/cpp/sample.sh

@@ -8,6 +8,12 @@ WORKDIR /root/cpp
 COPY .gdbinit /root/.gdbinit
 COPY sh-script/init_config.sh /root/init_config.sh
 
+# .envから環境変数を設定
+ARG ATCODER_USER
+ARG ATCODER_PASS
+ENV ATCODER_USER=$ATCODER_USER
+ENV ATCODER_PASS=$ATCODER_PASS
+
 # 起動シェルをshからbashに変更
 SHELL ["/bin/bash", "-c"]
 

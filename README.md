@@ -4,18 +4,21 @@
 
 1. リポジトリをクローンしてディレクトリに移動します
    `git clone git@github.com:fukada-m/AtCoder-Cpp.git && cd AtCoder-Cpp`
-2. `docker compose up -d`でコンテナを立ち上げる
-3. VsCode の DevContainers 拡張を使って VsCode にコンテナをアタッチする
-4. `cd cpp`
-5. ログインする[^1]
-   1. `acc login`
-   2. `oj login https://beta.atcoder.jp/`
-6. 問題をダウンロードする
+2. OJ のログイン情報を記載した.env を作成する[^1]
+   1. cp `.env.example .env`
+   2. ユーザー名とパスワードを書き換える
+3. `docker compose up -d`でコンテナを立ち上げる
+4. VsCode の DevContainers 拡張を使って VsCode にコンテナをアタッチする
+5. `cd cpp`
+6. AtCoder Cli にログインする
+   - `acc login`
+7. 問題をダウンロードする
    - ./sh-script/run_dl.sh
-7. テストする
+8. テストする
    - ./sh-script/run_test.sh
-8. 提出する
-   - ./sh-script/run_submit.sh
+9. 提出する
+
+- ./sh-script/run_submit.sh
 
 ## リリースノート
 
