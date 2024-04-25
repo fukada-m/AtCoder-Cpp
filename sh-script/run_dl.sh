@@ -7,3 +7,5 @@ fi
 
 cd /root/cpp/src
 acc new $1
+cd $1
+touch AC-List.md
