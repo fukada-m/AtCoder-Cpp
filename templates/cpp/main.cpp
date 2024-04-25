@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+using ll = long long;
 #define rep(i, s, n) for (int i = (s); i < (int)(n); i++)
 
 
