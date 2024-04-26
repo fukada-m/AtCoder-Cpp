@@ -3,7 +3,7 @@ FROM gcc:latest
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Tokyo
 
-WORKDIR /root/cpp
+WORKDIR /root
 
 COPY .gdbinit /root/.gdbinit
 COPY sh-script/init_config.sh /root/init_config.sh
