@@ -6,6 +6,7 @@ using ll = long long;
 
 
 int main(){
+  // テストと提出をする前にこの2行はコメントアウトしてね
   ifstream inputFile("/root/cpp/input/input.txt");
   cin.rdbuf(inputFile.rdbuf());
  
