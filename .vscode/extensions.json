@@ -7,6 +7,7 @@
     "ms-vscode.cmake-tools",
     "github.copilot",
     "ms-ceintl.vscode-language-pack-ja",
-    "github.copilot-chat"
+    "github.copilot-chat",
+    "donjayamanne.githistory"
   ]
 }
