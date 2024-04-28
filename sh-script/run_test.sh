@@ -6,7 +6,9 @@ if [ "$#" -ne 2 ]; then
 fi
 
 g++ "/root/cpp/src/$1/$2/main.cpp" -o "/root/cpp/src/$1/$2/a.out"
-mv /root/cpp/src/$1/$2/tests /root/cpp/src/$1/$2/test
+if [ -d "/root/cpp/src/$1/$2/tests" ]; then
+    mv /root/cpp/src/$1/$2/tests /root/cpp/src/$1/$2/test
+fi
 cd /root/cpp/src/$1/$2
 oj t
 cd /root/cpp
