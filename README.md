@@ -40,6 +40,6 @@
 
 ## メンテナー
 
-X の ID：@patch88888
+[X](https://twitter.com/patch88888)
 
 [^1]: 事前に Atcoder(https://atcoder.jp/)に登録している必要があります。
