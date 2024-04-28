@@ -1,2 +1,1 @@
-C AC
-D AC
+C D 
