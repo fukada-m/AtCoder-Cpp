@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define rep(i, s, n) for (int i = (s); i < (int)(n); i++)
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
 
 int rec(vector<int> &table, vector<int> pattern, vector<vector<vector<int>>> &A, int ans, int index, int N){
   if (index == N) {
