@@ -8,7 +8,7 @@ using ll = long long;
 int main(){
   ifstream inputFile("/root/cpp/input/input.txt");
   cin.rdbuf(inputFile.rdbuf());
-
-        
+  
+  
   
 }
