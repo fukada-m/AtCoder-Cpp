@@ -6,7 +6,8 @@
     "deque": "cpp",
     "string": "cpp",
     "vector": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "*.tcc": "cpp"
   },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
