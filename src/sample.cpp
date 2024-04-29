@@ -9,8 +9,6 @@ int main(){
   ifstream inputFile("/root/cpp/input/input.txt");
   cin.rdbuf(inputFile.rdbuf());
   
-  int N;
-  cin >> N;
-  
+
   
 }
